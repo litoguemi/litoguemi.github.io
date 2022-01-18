@@ -1,0 +1,24 @@
+* text=auto
+
+# Archivos que deben ser normalizados
+*.java text
+*.xhtml text
+*.html text
+*.xml text
+*.css text
+*.js text
+*.properties text
+*.sql text
+*.jrxml text
+*.txt text
+*.md text
+.gitignore text
+
+# Archivos binarios que no deben ser normalizados
+*.png binary
+*.gif binary
+*.jpg binary
+*.jar binary
+*.ico binary
+*.jasper binary
+.gitkeep binary

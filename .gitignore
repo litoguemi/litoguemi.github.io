@@ -1,0 +1,13 @@
+### NetBeans ###
+/**/target/
+/**/faces-config.NavData
+/**/nb-configuration.xml
+/**/nbactions*.xml
+/**/nbproject/
+/**/pom.xml.versionsBackup
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
