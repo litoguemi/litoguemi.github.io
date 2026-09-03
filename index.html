@@ -1,206 +1,314 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Litoguemi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Miguel Jarama · Software Developer &amp; AI Enthusiast</title>
+	<meta name="description" content="Miguel Jarama — software analyst developer with 8+ years of experience, exploring AI, machine learning, LLMs and sustainable tech from Germany. Less is more, in code, design and life.">
+	<meta name="author" content="Miguel Jarama">
+	<meta name="theme-color" content="#2f6b4f">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Miguel Jarama">
+	<meta property="og:title" content="Miguel Jarama · Software Developer &amp; AI Enthusiast">
+	<meta property="og:description" content="Building simple software designed to last — with a growing love for AI, LLMs and protecting the planet.">
+	<meta property="og:url" content="https://litoguemi.github.io/">
+	<meta property="og:image" content="https://opengraph.githubassets.com/1/litoguemi/litoguemi">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://litoguemi.github.io/">
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script>
+		(function () {
+			document.documentElement.classList.add('js');
+			var t = null;
+			try { t = localStorage.getItem('theme'); } catch (e) {}
+			if ((t ? t === 'dark' : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches))
+				document.documentElement.classList.add('dark');
+		})();
+	</script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
+	<!-- Header -->
+	<header class="site-header" id="top">
+		<div class="container nav-wrap">
+			<a class="brand" href="#top" aria-label="Miguel Jarama — back to top">
+				<span class="brand-mark" aria-hidden="true">MJ</span>
+			</a>
+			<nav class="site-nav" id="site-nav" aria-label="Primary">
+				<ul>
 					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a class="nav-cta" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+			<div class="header-tools">
+				<button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"></path></svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+				</button>
+				<button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+					<svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 6.5h18M3 12h18M3 17.5h18"></path></svg>
+					<svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5.5 5.5l13 13M18.5 5.5l-13 13"></path></svg>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main id="main">
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/camelion.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Miguel Jarama</strong>.</h1>
-							</header>
-							<p><strong>SOFTWARE ANALYST DEVELOPER. </strong>I have been working as a software developer for over 8 years. I consider myself to have the aptitude to execute activities in computer-based systems, databases, networks, and hardware components. Constantly pursuing the improvement of my skills but, I particularly welcome the chance to explore new topics and learn about them.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+		<!-- Hero -->
+		<section class="hero" id="home">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>Software Analyst Developer · Germany</p>
+					<h1 class="reveal">Less is more — <span class="accent">in code</span>, design &amp; life.</h1>
+					<p class="hero-lead reveal">Hi, I'm <strong>Miguel Jarama</strong>. With more than eight years building software, I'm now exploring <strong>artificial intelligence, LLMs and machine learning</strong> — keeping things simple, durable and kind to the planet. Why not?! 🤘</p>
+					<div class="hero-actions reveal">
+						<a class="btn btn-primary" href="#projects">See my work</a>
+						<a class="btn btn-ghost" href="#contact">Get in touch</a>
+					</div>
+					<ul class="socials reveal" aria-label="Find me online">
+						<li>
+							<a href="https://github.com/litoguemi" target="_blank" rel="noopener noreferrer">
+								<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+								GitHub
+							</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com/in/miguel-jaramap/" target="_blank" rel="noopener noreferrer">
+								<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg>
+								LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://litoguemi.wordpress.com/" target="_blank" rel="noopener noreferrer">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path><path d="M12 7v7M9 10l3-3 3 3"></path></svg>
+								Blog
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hero-visual" aria-hidden="true">
+					<div class="avatar">
+						<!-- Portrait: swap this image file anytime to update it. -->
+						<div class="avatar-inner">
+							<img src="images/camelion.jpg" alt="Chameleon" width="640" height="640">
 						</div>
 					</div>
+					<ul class="chips">
+						<li style="--i:0">🤖 AI &amp; ML</li>
+						<li style="--i:1">💬 LLMs &amp; chatbots</li>
+						<li style="--i:2">🌿 Sustainability</li>
+						<li style="--i:3">💻 8+ years</li>
+					</ul>
 				</div>
-			</article>
+			</div>
+			<p class="hero-quote reveal">&ldquo;Embracing simplicity while designing for longevity.&rdquo;</p>
+		</section>
 
 		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's some of the stuff I do.</h2>
-						<p>Software development.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-database"></span>
-								<h3>Database Design</h3>
-								<p>Analysis and design of databases, relational designs particularly</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-laptop-code"></span>
-								<h3>Web Development</h3>
-								<p>Back-end and Front-end development, using also javascript and CSS</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-server"></span>
-								<h3>Server Configuration</h3>
-								<p>Basics on server configuration and problems identification</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
+		<section class="section section-alt" id="work">
+			<div class="container">
+				<header class="section-head reveal">
+					<p class="eyebrow">What I do</p>
+					<h2>Simple tools, smart solutions.</h2>
+					<p class="section-sub">I enjoy working across the whole stack — with a soft spot for AI that serves people and the planet.</p>
+				</header>
+				<div class="card-grid four">
+					<article class="card reveal">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3.5 3.5 0 0 0-3.5 3.5c0 .7.2 1.4.6 2A5 5 0 0 0 4 13c0 3.3 2.2 5 5.8 5h4.4c3.6 0 5.8-1.7 5.8-5a5 5 0 0 0-5.1-4.5c.4-.6.6-1.3.6-2A3.5 3.5 0 0 0 12 3z"></path><path d="M9 17c.5 1.5 1.7 2.5 3 2.5s2.5-1 3-2.5"></path></svg>
+						</span>
+						<h3>AI &amp; Machine Learning</h3>
+						<p>Hands-on ML, from fine-tuning transformer models to running full training notebooks. Always experimenting, always learning.</p>
+						<ul class="tags" aria-label="Tools"><li>Python</li><li>DistilBERT</li><li>Jupyter</li></ul>
+					</article>
+					<article class="card reveal">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"></path><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01"></path></svg>
+						</span>
+						<h3>LLMs &amp; Chatbots</h3>
+						<p>Retrieval-augmented chatbots and LLM tooling with LangChain — grounded answers instead of confident guesses.</p>
+						<ul class="tags" aria-label="Tools"><li>LangChain</li><li>RAG</li><li>Hugging Face</li></ul>
+					</article>
+					<article class="card reveal">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"></path><path d="M2 21c0-3 1.9-5.5 3.8-7"></path></svg>
+						</span>
+						<h3>Environmental Data</h3>
+						<p>Applying remote sensing and computer vision to sustainability — like spotting aquaculture fish cages from satellite imagery.</p>
+						<ul class="tags" aria-label="Tools"><li>Remote Sensing</li><li>Computer Vision</li><li>YOLO</li></ul>
+					</article>
+					<article class="card reveal">
+						<span class="card-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13.5 4l-3 16"></path></svg>
+						</span>
+						<h3>Web &amp; Full-stack</h3>
+						<p>Eight-plus years shipping back-ends, APIs and databases across Java, Ruby and modern front-ends. Straightforward and long-lived.</p>
+						<ul class="tags" aria-label="Tools"><li>Java</li><li>Spring Boot</li><li>Svelte</li><li>SQL</li></ul>
+					</article>
 				</div>
-			</article>
+			</div>
+		</section>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Projects</h2>
-						<p>Some projects I've been involved in </p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/litoguemi/lili" class="image featured"><img src="images/ibm_watson_logo.jpg" alt="" /></a>
-								<h3><a href="https://github.com/litoguemi/lili">Lili</a></h3>
-								<p>IBM Watson Assistant</p>
-							</article>
+		<!-- Projects -->
+		<section class="section" id="projects">
+			<div class="container">
+				<header class="section-head reveal">
+					<p class="eyebrow">Selected projects</p>
+					<h2>Things I've built &amp; explored.</h2>
+					<p class="section-sub">A few highlights from my GitHub — machine learning experiments, environmental data work and web apps. Cards link straight to each repository.</p>
+				</header>
+				<div class="card-grid three">
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/fish-cage" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/fish-cage.jpg" alt="Aerial photo of a fish farm" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/fish-cage" data-fallback-2="assets/img/projects/fish-cage.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/fish-cage" target="_blank" rel="noopener noreferrer">Fish Cage Detection</a></h3>
+							<p>Detecting aquaculture fish cages in satellite imagery — computer vision applied to monitoring marine environments and supporting sustainability.</p>
+							<ul class="tags" aria-label="Technologies"><li>Python</li><li>Remote Sensing</li><li>Jupyter</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/fish-cage" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/litoguemi/pokemonAPI" class="image featured"><img src="images/ruby_crud_api.jpg" alt="" /></a>
-								<h3><a href="https://github.com/litoguemi/pokemonAPI">Pokemon Manager</a></h3>
-								<p>Ruby CRUD using API's</p>
-							</article>
+					</article>
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/GenerativeAI_DistilBert" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/GenerativeAI_DistilBert.jpg" alt="Illustration of a neural network with a chip" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/GenerativeAI_DistilBert" data-fallback-2="assets/img/projects/GenerativeAI_DistilBert.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/GenerativeAI_DistilBert" target="_blank" rel="noopener noreferrer">BERT Fine-tuning</a></h3>
+							<p>A project to fine-tune a BERT model on custom data — practical, hands-on experience with transformers and training pipelines.</p>
+							<ul class="tags" aria-label="Technologies"><li>Python</li><li>DistilBERT</li><li>Hugging Face</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/GenerativeAI_DistilBert" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/litoguemi/va-app" class="image featured"><img src="images/travel_picture.png" alt="" /></a>
-								<h3><a href="https://github.com/litoguemi/va-app">Travel Board</a></h3>
-								<p>Travel budget and weather analysis</p>
-							</article>
+					</article>
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/chatbot-rag-langchain" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/chatbot-rag-langchain.jpg" alt="Robot with a speech bubble" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/chatbot-rag-langchain" data-fallback-2="assets/img/projects/chatbot-rag-langchain.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/chatbot-rag-langchain" target="_blank" rel="noopener noreferrer">RAG Chatbot</a></h3>
+							<p>A retrieval-augmented generation chatbot built with LangChain — grounded, context-aware answers over custom documents.</p>
+							<ul class="tags" aria-label="Technologies"><li>Python</li><li>LangChain</li><li>RAG</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/chatbot-rag-langchain" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
 						</div>
-						<!--<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+					</article>
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/langchain_course" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/langchain_course.jpg" alt="Code on a computer screen" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/langchain_course" data-fallback-2="assets/img/projects/langchain_course.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/langchain_course" target="_blank" rel="noopener noreferrer">LangChain Course</a></h3>
+							<p>A hands-on exploration of LLM functionality — chains, agents, memory and tools — all the moving parts behind modern AI apps.</p>
+							<ul class="tags" aria-label="Technologies"><li>Python</li><li>LangChain</li><li>LLMs</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/langchain_course" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+					</article>
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/yolo-midas" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/yolo-midas.jpg" alt="LiDAR point cloud of a city intersection" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/yolo-midas" data-fallback-2="assets/img/projects/yolo-midas.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/yolo-midas" target="_blank" rel="noopener noreferrer">YOLO + MiDaS</a></h3>
+							<p>Combining YOLO object detection with MiDaS depth estimation — an exploration of how machines perceive objects and space.</p>
+							<ul class="tags" aria-label="Technologies"><li>Python</li><li>YOLO</li><li>MiDaS</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/yolo-midas" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>-->
-					</div>
-					<footer>
-						<p>Have a question?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
+					</article>
+					<article class="project-card reveal">
+						<a class="project-thumb" href="https://github.com/litoguemi/va-app" target="_blank" rel="noopener noreferrer">
+							<img src="assets/img/projects/va-app.jpg" alt="Sunset view from an airplane window" loading="lazy" decoding="async" width="1200" height="630" data-fallback="https://opengraph.githubassets.com/1/litoguemi/va-app" data-fallback-2="assets/img/projects/va-app.svg">
+						</a>
+						<div class="project-body">
+							<h3><a href="https://github.com/litoguemi/va-app" target="_blank" rel="noopener noreferrer">Travel Board</a></h3>
+							<p>A travel budget and weather analysis app built with Svelte — plan trips with cost estimates and forecasts at a glance.</p>
+							<ul class="tags" aria-label="Technologies"><li>Svelte</li><li>JavaScript</li><li>Web App</li></ul>
+							<a class="project-link" href="https://github.com/litoguemi/va-app" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+						</div>
+					</article>
+
 				</div>
-			</article>
+				<p class="more-link reveal">
+					<a href="https://github.com/litoguemi?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories <span aria-hidden="true">↗</span></a>
+				</p>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section class="section section-alt" id="about">
+			<div class="container split">
+				<div class="split-copy reveal">
+					<p class="eyebrow">About me</p>
+					<h2>Designing for longevity, embracing simplicity.</h2>
+					<p>I've worked as a software analyst developer for more than eight years — across databases, networks, hardware and the full arc of web development. If there's one thing I've learned, it's that restraint pays off: clear structure, honest code and features that earn their place.</p>
+					<p>Lately I've been fascinated by artificial intelligence. I've fine-tuned a BERT model, played with retrieval-augmented chatbots, worked through LangChain, and started applying computer vision to environmental problems — like spotting aquaculture fish cages from satellite imagery.</p>
+					<p>My motto is simple: <em>&ldquo;Why not?!&rdquo;</em> If a problem is worth solving, I'm curious enough to try. And I'd rather build something small and lasting than big and brittle — the quiet elegance of nature is a pretty good design brief.</p>
+				</div>
+				<ul class="facts reveal" aria-label="Quick facts">
+					<li><span aria-hidden="true">🌍</span><div><strong>Based in Germany</strong><small>UTC+02 · open to remote</small></div></li>
+					<li><span aria-hidden="true">🧑‍💻</span><div><strong>8+ years in software</strong><small>analyst developer &amp; full-stack</small></div></li>
+					<li><span aria-hidden="true">🤖</span><div><strong>Exploring AI &amp; ML</strong><small>fine-tuning, LLMs, computer vision</small></div></li>
+					<li><span aria-hidden="true">🌿</span><div><strong>Climate &amp; sustainability</strong><small>remote sensing for marine care</small></div></li>
+					<li><span aria-hidden="true">🤝</span><div><strong>Open to collaborations</strong><small>ethical AI &amp; environmental tech</small></div></li>
+				</ul>
+			</div>
+		</section>
 
 		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>No matter the doubt </p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://litoguemi.wordpress.com/" class="icon brands fa-wordpress"><span class="label">Wordpress</span></a></li>
-								<li><a href="https://linkedin.com/in/miguel-jaramap/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/litoguemi" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+		<section class="section section-contact" id="contact">
+			<div class="container narrow">
+				<header class="section-head reveal">
+					<p class="eyebrow">Get in touch</p>
+					<h2>Let's build something that lasts.</h2>
+					<p class="section-sub">Curious about a project, an idea or a collaboration in AI, sustainability or software? I'm always happy to talk — no matter the doubt.</p>
+				</header>
+				<div class="card-grid three">
+					<article class="card contact-card reveal">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+						</span>
+						<h3>GitHub</h3>
+						<p>Code, experiments and open source — explore the repositories behind this site.</p>
+						<a class="btn btn-ghost btn-small" href="https://github.com/litoguemi" target="_blank" rel="noopener noreferrer">Follow along <span aria-hidden="true">↗</span></a>
+					</article>
+					<article class="card contact-card reveal">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg>
+						</span>
+						<h3>LinkedIn</h3>
+						<p>Professional background and experience — happy to connect with fellow builders.</p>
+						<a class="btn btn-ghost btn-small" href="https://linkedin.com/in/miguel-jaramap/" target="_blank" rel="noopener noreferrer">Connect <span aria-hidden="true">↗</span></a>
+					</article>
+					<article class="card contact-card reveal">
+						<span class="contact-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path><path d="M12 7v7M9 10l3-3 3 3"></path></svg>
+						</span>
+						<h3>Blog</h3>
+						<p>Thoughts, notes and tutorials — the quieter side of the same curiosity.</p>
+						<a class="btn btn-ghost btn-small" href="https://litoguemi.wordpress.com/" target="_blank" rel="noopener noreferrer">Read posts <span aria-hidden="true">↗</span></a>
+					</article>
 				</div>
-			</article>
+			</div>
+		</section>
+	</main>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<a class="brand brand-footer" href="#top" aria-label="Back to top">
+				<span class="brand-mark" aria-hidden="true">MJ</span>
+			</a>
+			<p>&copy; <span id="year">2026</span> Miguel Jarama · Crafted by hand — HTML, CSS &amp; vanilla JS, no frameworks, no fuss.</p>
+			<p class="foot-note">Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> · <a href="https://github.com/litoguemi/litoguemi.github.io/blob/main/assets/img/projects/CREDITS.md" target="_blank" rel="noopener noreferrer">Image credits</a> · <a href="#top">Back to top ↑</a></p>
+		</div>
+	</footer>
 
-	</body>
+	<script src="assets/js/main.js"></script>
+</body>
 </html>
+
